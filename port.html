@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prime Academic Solutions | Writing Portfolio</title>
+
+  <style>
+    :root {
+      --primary-blue: #0f2f57;
+      --secondary-blue: #1f4f8f;
+      --dark-gray: #333333;
+      --light-gray: #f4f6f8;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: var(--dark-gray);
+      background-color: var(--white);
+    }
+
+    header {
+      background: var(--primary-blue);
+      color: var(--white);
+      padding: 20px 40px;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .nav img {
+      height: 50px;
+    }
+
+    .nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(15,47,87,0.9), rgba(15,47,87,0.9));
+      color: var(--white);
+      padding: 80px 40px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    section {
+      padding: 60px 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: var(--primary-blue);
+      margin-bottom: 20px;
+      font-size: 28px;
+      border-bottom: 3px solid var(--secondary-blue);
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin-top: 15px;
+    }
+
+    .services, .samples {
+      background: var(--light-gray);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: var(--white);
+      padding: 25px;
+      border-left: 5px solid var(--primary-blue);
+      box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      color: var(--secondary-blue);
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 14px;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 10px 0 25px;
+    }
+
+    .contact a {
+      display: inline-block;
+      background: var(--primary-blue);
+      color: var(--white);
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 3px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: var(--primary-blue);
+      color: var(--white);
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav">
+      <div>
+        <!-- Replace src with your actual logo file -->
+        <img src="logo.jpeg" alt="Prime Academic Solutions Logo">
+      </div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#samples">Samples</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Prime Academic Solutions</h1>
+    <p>Professional academic and content writing services built on clarity, quality, and results.</p>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      Prime Academic Solutions provides high-quality academic and professional writing services.
+      I specialize in well-researched, plagiarism-free, and clearly structured content tailored
+      to meet client requirements across various academic disciplines.
+    </p>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Academic Writing</h3>
+        <p>Essays, research papers, dissertations, and case studies across multiple disciplines.</p>
+      </div>
+      <div class="card">
+        <h3>Editing & Proofreading</h3>
+        <p>Grammar correction, structure improvement, and academic formatting.</p>
+      </div>
+      <div class="card">
+        <h3>Reports & Proposals</h3>
+        <p>Professional reports, project proposals, and research documentation.</p>
+      </div>
+      <div class="card">
+        <h3>Online Content</h3>
+        <p>Articles, blogs, and educational content with a clear and professional tone.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="samples" class="samples">
+    <h2>Writing Samples</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Research Essay</h3>
+        <p>Analytical academic essay with proper citations and structured arguments.</p>
+      </div>
+      <div class="card">
+        <h3>Case Study</h3>
+        <p>Detailed case study analysis including problem identification and solutions.</p>
+      </div>
+      <div class="card">
+        <h3>Project Proposal</h3>
+        <p>Well-organized proposal outlining objectives, methodology, and outcomes.</p>
+      </div>
+      <div class="card">
+        <h3>Literature Review</h3>
+        <p>Comprehensive review of scholarly sources with critical evaluation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Need reliable academic writing support? Get in touch today.</p>
+    <a href="mailto:primeacademicsolutions@email.com">Email Me</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Prime Academic Solutions. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
